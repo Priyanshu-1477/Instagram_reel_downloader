@@ -1,7 +1,7 @@
 # 🛑 Sensitive credentials
 .env
 session.json
-reels_history.json
+reel_history.json
 whatsapp_sender.py
 # 📂 Python cache and compiled files
 __pycache__/
