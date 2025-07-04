@@ -1,5 +1,7 @@
 import json
 import os
+import time
+import random
 
 HISTORY_FILE = "reel_history.json"
 
@@ -45,9 +47,13 @@ def extract_reel_code_from_messages(messages):
                 reel_code = text.split("instagram.com/reel/")[1].split("/")[0]
                 print(f"[DEBUG] 📝 Extracted from text: {reel_code}")
                 reel_codes.append(reel_code)
+
         except Exception as e:
             print(f"[ERROR] Failed to extract reel code: {e}")
             continue
+
+        # Optional delay between messages to reduce detection
+        time.sleep(random.uniform(0.5, 1.5))
 
     if not reel_codes:
         print("[WARN] ❌ No reel code could be extracted.")
