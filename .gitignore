@@ -1,0 +1,14 @@
+# 🛑 Sensitive credentials
+.env
+session.json
+reels_history.json
+whatsapp_sender.py
+# 📂 Python cache and compiled files
+__pycache__/
+*.pyc
+
+
+
+# 📂 Media storage (optional, if you don’t want to upload the downloaded reels)
+instagram_reels/*
+!instagram_reels/.gitkeep
