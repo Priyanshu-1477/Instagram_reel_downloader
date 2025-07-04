@@ -12,3 +12,4 @@ __pycache__/
 # 📂 Media storage (optional, if you don’t want to upload the downloaded reels)
 instagram_reels/*
 !instagram_reels/.gitkeep
+cron.log
